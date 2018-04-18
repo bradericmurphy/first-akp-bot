@@ -3,7 +3,7 @@ import os
 import time
 from boto.s3.connection import S3Connection
 
-request_params = {'token': os.environ["GROUPME_BOT_ID"]}
+request_params = {'token': os.environ['GROUPME_BOT_ID']}
 
 while True:
 
@@ -17,7 +17,7 @@ while True:
         for message in response_messages:
             if (message['text']=='hello'):
                 to_send = 'Hello!'
-                post_params = { 'bot_id' : os.environ["GROUPME_BOT_ID"], 'text': to_send }
+                post_params = { 'bot_id' : os.environ['GROUPME_BOT_ID'], 'text': to_send }
                 requests.post('https://api.groupme.com/v3/bots/post', params = post_params)
                 request_params['since_id'] = message['id']
                 break
