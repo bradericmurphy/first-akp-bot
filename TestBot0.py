@@ -8,6 +8,7 @@ import json
 #    print("config vars working")
 
 request_params = {'token': os.environ.get('GROUP_BOT_ID')}
+print(os.environ.get('GROUP_BOT_ID'))
 
 while True:
 
