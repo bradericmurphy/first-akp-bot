@@ -7,7 +7,7 @@ import json
 #if (os.environ.get('CONFIG_VAR_TEST')):
 #    print("config vars working")
 
-request_params = {'token': os.environ.get['GROUP_BOT_ID']}
+request_params = {'token': os.environ.get('GROUP_BOT_ID')}
 
 while True:
 
