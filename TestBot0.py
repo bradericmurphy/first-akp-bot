@@ -3,7 +3,7 @@ import os
 import time
 from boto.s3.connection import S3Connection
 
-request_params = {'token': os.environ['GROUPME_BOT_ID']}
+request_params = {'token': os.environ['GROUP_BOT_ID']}
 
 while True:
 
